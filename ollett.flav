@@ -1,0 +1,21 @@
+; Any line below preceeded by semicolon is a comment.  Some optional
+; directives are commented out, but you're welcome to use them by
+; removing the comment.  The directives that are not commented out by
+; default are required for your theme to work correctly.
+
+;----------// Theme Information
+
+  name        = Ollett 
+  description = Custom theme by A. Ollett.
+  module      = hwpi_modern
+  screenshot  = screenshot.png
+
+;----------// Stylesheets
+
+  css[] = css/ollett.css
+  css[] = css/ollett-fonts.css
+; css[] = css/ollett.layout.css
+: ie_stylesheets[screen][lt IE 9][] = css/ollett-ie.css
+
+; scripts[] = js/ollett.js
+
