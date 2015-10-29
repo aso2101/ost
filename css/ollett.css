@@ -15,7 +15,7 @@ header a:hover {
     min-height: 25px;
     padding: 3px 15px 5px;
 }
-#menu-bar ul.nice-menu li a {
+#menu-bar ul.nice-menu ul li a {
     color:#aaa;
     display:block;
     font-weight:normal;
@@ -24,33 +24,35 @@ header a:hover {
     text-decoration:none;
     text-shadow:0 1px 1px rgba(0 0 0, 0.5);
 }
-#menu-bar ul.nice-menu li:hover {
+#menu-bar ul.nice-menu li a:hover,
+#menu-bar ul.nice-menu li a.active,
+#menu-bar ul.nice-menu li.active-trail a,
+#menu-bar ul.nice-menu ul li a,
+#menu-bar ul.nice-menu ul li a:hover,
+#menu-bar ul.nice-menu ul li a.active,
+#menu-bar ul.nice-menu ul li.active-trail a {
     color:#ccc;
     background:rgba(255 255 255, 0.25) none repeat scroll 0 0;
     border-radius:0.2em;
     outline: 0 nine;
 }
+#content-column {
+    padding-left:20px;
+    padding-right:20px;
+}
 .sidebar ul li {
     list-style:none;
 }
+.sidebar h2.block-title {
+    text-transform:lowercase;
+    font-weight:normal;
+    padding: 4px 0 4px 8px;
+}
+a:active {
+    text-decoration:none;
+}
 
 /* TYPOGRAPHY*/
-a, a:visited {
-	color:#446677;
-	text-decoration: none;
-	}
-
-a:hover {
-	text-decoration: underline;
-	color: #222;
-	}
-
-h2, h3, h4 {
-	font-weight:normal;
-	font-family:'Arvo', arial, serif;
-	margin-bottom:15px;
-	}
-	
 
 /* IF THE SEPARATE IE CSS FILE IS NOT USED, PREFIX CLASSES CAN BE USED THROUGHOUT THIS FILE.
  THIS EXAMPLE IS AN IE8 OVERRIDE FOR MARGIN-BOTTOM OF AN H2 - .lt-ie8 WOULD TARGET IE7 */
