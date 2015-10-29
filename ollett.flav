@@ -7,13 +7,13 @@
 
   name        = Ollett 
   description = Custom theme by A. Ollett.
-  module      = hwpi_modern
+  module      = aberdeen
   screenshot  = screenshot.png
 
 ;----------// Stylesheets
 
   css[] = css/ollett.css
-  css[] = css/ollett-fonts.css
+  css[] = ollett-fonts.css
 ; css[] = css/ollett.layout.css
 : ie_stylesheets[screen][lt IE 9][] = css/ollett-ie.css
 
