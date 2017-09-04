@@ -14,8 +14,6 @@
 
   css[] = css/ollett.css
   css[] = ollett-fonts.css
-; css[] = css/ollett.layout.css
-: ie_stylesheets[screen][lt IE 9][] = css/ollett-ie.css
 
-; scripts[] = js/ollett.js
+;  scripts[] = js/ollett.js
 

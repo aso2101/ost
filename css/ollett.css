@@ -1,4 +1,10 @@
 /* To utilize a google font, place the font url's here at the top of this css file as seen here*/
+body {
+    background: #e3e3e3;
+    color: #292929;
+    font-family: helvetica,arial,sans-serif;
+    height: 100%;
+}
 #header {
     overflow:hidden;
     width:100%;
@@ -9,60 +15,88 @@ header a:hover {
     text-decoration:none;
 }
 #menu-bar {
-    background: #222;
+    background:#222;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     min-height: 25px;
     padding: 3px 15px 5px;
 }
-#menu-bar ul.nice-menu ul li a {
+#menu-bar ul.nice-menu li a {
     color:#aaa;
     display:block;
     font-weight:normal;
     text-transform:lowercase;
+    line-height:2em;
     padding:0 0.5em;
     text-decoration:none;
-    text-shadow:0 1px 1px rgba(0 0 0, 0.5);
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
 }
-#menu-bar ul.nice-menu li a:hover,
-#menu-bar ul.nice-menu li a.active,
-#menu-bar ul.nice-menu li.active-trail a,
-#menu-bar ul.nice-menu ul li a,
-#menu-bar ul.nice-menu ul li a:hover,
-#menu-bar ul.nice-menu ul li a.active,
-#menu-bar ul.nice-menu ul li.active-trail a {
+#menu-bar ul.nice-menu li a:hover,#menu-bar ul.nice-menu li a.active,#menu-barul.nice-menu li.active-trail a,#menu-bar ul.nice-menu ul li a,#menu-bar ul.nice-menu ul li a:hover,#menu-bar ul.nice-menu ul li a.active,#menu-barul.nice-menu ul li.active-trail a{
+    background:rgba(255, 255, 255, 0.25) none repeat scroll 0 0;
     color:#ccc;
-    background:rgba(255 255 255, 0.25) none repeat scroll 0 0;
+    text-decoration:none;
     border-radius:0.2em;
-    outline: 0 nine;
+    -moz-border-radius:0.2em;
+    -webkit-border-radius:0.2em;
+    outline:0 none;}
+#menu-bar ul.nice-menu li.active a:hover,#menu-bar ul.nice-menu li.active-trail a:hover,#menu-barul.nice-menu ul li.active-trail a:hover{color:#fff;}
+.breadcrumb {
+    text-transform:lowercase;
 }
-#content-column {
-    padding-left:20px;
-    padding-right:20px;
+.page-node #content-column .content-inner {
+    padding: 20px;
 }
-.sidebar ul li {
-    list-style:none;
+.boxes-box-content {
+    padding: 4px 4px 0 8px;
+}
+.boxes-box-content h1 {
+    display:none;
+}
+#main-content {
+    padding: 15px;
 }
 .sidebar h2.block-title {
     text-transform:lowercase;
     font-weight:normal;
     padding: 4px 0 4px 8px;
 }
-a:active {
+.sidebar ul li {
+    list-style:none;
+    text-transform:lowercase;
+}
+.sidebar ul li a:hover {
     text-decoration:none;
 }
-
+a, a:link, .boxes-box-content a, a:visited, .boxes-box-content a:visited {
+    color:#4d6099; 
+}
+a:hover, .boxes-box-content a:hover {
+    color:#92a0c8;
+    text-decoration:none;
+}
+ul, .block.block-boxes-os_boxes_html ul, .block .field-name-body ul {
+    list-style:none;
+}
+.block.block-boxes-os_boxes_html ul li:before, .block .field-name-body ul li:before {
+    content: "\00BB \0020";
+					       }
+.node-readmore { font-size:100%; }
+pre {
+    padding: 0.5em;
+    background:#282b2e;
+    color:#e0e2e4;
+}
 /* TYPOGRAPHY*/
-@font-face {
-    font-family: "Murty Sanskrit";
-    src: url(../fonts/Murty-Sanskrit-1.00.otf);
+.fle { 
+  font-size:280%;
+  font-family:'fleurons';
+  text-align:center;
+  padding:20px;
 }
-
-.san-Deva {
-  font-family: "Murty Sanskrit";
-  font-size:18px;
+.dn {
+  font-family:"Murty Sanskrit";
+  font-size:110%;
 }
-
 /* IF THE SEPARATE IE CSS FILE IS NOT USED, PREFIX CLASSES CAN BE USED THROUGHOUT THIS FILE.
  THIS EXAMPLE IS AN IE8 OVERRIDE FOR MARGIN-BOTTOM OF AN H2 - .lt-ie8 WOULD TARGET IE7 */
 .lt-ie9 h2 {
