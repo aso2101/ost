@@ -53,6 +53,15 @@ a:active {
 }
 
 /* TYPOGRAPHY*/
+@font-face {
+    font-family: "Murty Sanskrit";
+    src: url(../fonts/Murty-Sanskrit-1.00.otf);
+}
+
+.san-Deva {
+  font-family: "Murty Sanskrit";
+  font-size:18px;
+}
 
 /* IF THE SEPARATE IE CSS FILE IS NOT USED, PREFIX CLASSES CAN BE USED THROUGHOUT THIS FILE.
  THIS EXAMPLE IS AN IE8 OVERRIDE FOR MARGIN-BOTTOM OF AN H2 - .lt-ie8 WOULD TARGET IE7 */
